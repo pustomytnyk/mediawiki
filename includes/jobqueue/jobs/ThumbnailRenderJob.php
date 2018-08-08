@@ -95,6 +95,20 @@ class ThumbnailRenderJob extends Job {
 
 		wfDebug( __METHOD__ . ": hitting url {$thumbUrl}\n" );
 
+		// temp logging for T201305
+		if ( !strpos( $thumbUrl, 'px-' ) ) {
+			\MediaWiki\Logger\LoggerFactory::getInstance( 'thumb-T201305' )->warning(
+				'size missing',
+				[
+					'url' => $thumbUrl,
+					'name' => $thumbName,
+					'params' => $transformParams,
+					'paramstring' => $file->getHandler()->makeParamString( $transformParams ),
+					'handler' => get_class( $file->getHandler() ),
+				]
+			);
+		}
+
 		$request = MWHttpRequest::factory( $thumbUrl,
 			[ 'method' => 'HEAD', 'followRedirects' => true ],
 			__METHOD__
