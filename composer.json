@@ -52,7 +52,9 @@
 		"wikimedia/wait-condition-loop": "1.0.1",
 		"wikimedia/wrappedstring": "3.0.1",
 		"wikimedia/xmp-reader": "0.5.1",
-		"zordius/lightncandy": "0.23"
+		"zordius/lightncandy": "0.23",
+
+		"mediawiki/vector-skin": "dev-master"
 	},
 	"require-dev": {
 		"cache/integration-tests": "0.16.0",
