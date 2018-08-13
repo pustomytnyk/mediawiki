@@ -132,4 +132,12 @@ $wgDefaultSkin = "vector";
 # End of automatically generated settings.
 # Add more configuration options below.
 
-wfLoadSkin( 'Vector' );
+wfLoadSkin('Vector');
+
+# Wikibase
+$wgEnableWikibaseRepo = true;
+$wgEnableWikibaseClient = true;
+require_once "$IP/extensions/Wikibase/repo/Wikibase.php";
+require_once "$IP/extensions/Wikibase/repo/ExampleSettings.php";
+require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
