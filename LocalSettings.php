@@ -234,6 +234,7 @@ if ( $wmgUseWikibaseClient ) {
     'item' => $wmgWikibaseBaseNs,
     'property' => $wmgWikibaseBaseNs + 2,
   ];
+
   $wgWBClientSettings['repoSiteName'] = 'dinopedia Data';
   $wgWBClientSettings['otherProjectsLinks'] = [ 'wikidatawiki', 'commonswiki', 'ukwiki', 'enwiki' ];
   $wgWBClientSettings['otherProjectsLinksByDefault'] = true;
