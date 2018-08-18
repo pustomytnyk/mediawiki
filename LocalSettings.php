@@ -196,3 +196,17 @@ $wgWBClientSettings['siteGlobalID'] = 'dinopedia';
 $wgWBClientSettings['siteGroup'] = 'dinopedia';
 $wgWBCLientSettings['injectRecentChanges'] = true;
 $wgWBClientSettings['languageLinkSiteGroup'] = 'dinopedia';
+$wgWBClientSettings['repoUrl'] = 'https://dinopedia-uk.herokuapp.com';
+$wgWBClientSettings['repoArticlePath'] = '/index.php?title=$1';
+$wgWBClientSettings['repoScriptPath'] = '/w';
+$wgWBClientSettings['repositories'] = [
+  '' => [
+    'repoDatabase' => 'dinopedia',
+    'baseUri' => $wgWBClientSettings['repoUrl'] . '/entity/',
+    'entityNamespaces' => [
+      'item' => WB_NS_ITEM,
+                  'property' => WB_NS_PROPERTY
+    ],
+    'prefixMapping' => [ '' => '' ],
+  ]
+];
