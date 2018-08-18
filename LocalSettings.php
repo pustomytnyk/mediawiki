@@ -22,10 +22,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename =  [
-    'default' => 'Dinopedia',
-    'datawiki' => 'Dinopedia Data',
-  ];
+$wgSitename = "Динопедія";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -35,10 +32,7 @@ $wgSitename =  [
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = [
-    'dinopedia' => 'https://dinopedia-uk.herokuapp.com',
-    'datawiki' => 'https://dinopedia-uk.herokuapp.com',
-  ];
+$wgServer = "https://dinopedia-uk.herokuapp.com";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
