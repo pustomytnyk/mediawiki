@@ -160,3 +160,13 @@ $wgDefaultUserOptions['usebetatoolbar'] = 1;
 wfLoadExtension( 'Cite' );
 
 wfLoadExtension( 'Popups' );
+
+wfLoadExtension( 'WikibaseCreateLink' );
+$wgWBRepoSettings['siteLinkGroups'] = [
+    'droidwiki',
+    'wikipedia',
+    'special'
+];
+$wgWBClientSettings['repoSiteName'] = 'Dinopedia Data';
+$wgWBClientSettings['otherProjectsLinks'] = [ 'wikidatawiki', 'commonswiki', 'ukwiki', 'enwiki' ];
+$wgWBClientSettings['otherProjectsLinksByDefault'] = true;
