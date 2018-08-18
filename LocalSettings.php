@@ -162,6 +162,8 @@ wfLoadExtension( 'Cite' );
 wfLoadExtension( 'Popups' );
 
 wfLoadExtension( 'WikibaseCreateLink' );
+$wgWBClientSettings['siteGlobalID'] = 'dinopedia';
+$wgWBClientSettings['globalID'] = 'dinopedia';
 if ( $wmgUseWikibaseRepo ) {
   $wgEnableWikibaseRepo = true;
   $wgContentHandlerUseDB = true;
@@ -205,7 +207,6 @@ if ( $wmgUseWikibaseRepo ) {
 }
 if ( $wmgUseWikibaseClient ) {
   $wgEnableWikibaseClient = true;
-  wfLoadExtension( 'WikibaseCreateLink' );
   $wgWBClientSettings['repoUrl'] = 'https://dinopedia-uk.herokuapp.com';
   $wgWBClientSettings['repoArticlePath'] = '/index.php?title=$1';
   $wgWBClientSettings['repoScriptPath'] = '/w';
