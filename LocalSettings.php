@@ -221,7 +221,7 @@ if ( $wmgUseWikibaseClient ) {
       'prefixMapping' => [ '' => '' ],
     ]
   ];
-  $wgWBClientSettings['siteGlobalID'] = substr( $wgDBname, 0, -4 );
+  $wgWBClientSettings['siteGlobalID'] = 'dinopedia';
   $wgWBClientSettings['siteGroup'] = 'dinopedia';
   $wgWBClientSettings['changesDatabase'] = 'datawiki';
   $wgWBCLientSettings['injectRecentChanges'] = true;
