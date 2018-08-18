@@ -150,3 +150,13 @@ wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'WikiEditor' );
 
 wfLoadExtension( 'Gadgets' );
+
+wfLoadExtension( 'Interwiki' );
+$wgGroupPermissions['sysop']['interwiki'] = true;
+
+wfLoadExtension( 'CodeEditor' );
+$wgDefaultUserOptions['usebetatoolbar'] = 1;
+
+wfLoadExtension( 'Cite' );
+
+wfLoadExtension( 'Popups' );
