@@ -191,3 +191,4 @@ $wgWBRepoSettings['localClientDatabases'] = [
     'dinopedia' => 'dinopediawiki'
   ];
 $wgWBRepoSettings['formatterUrlProperty'] = 'P6';
+$wgWBClientSettings['siteGlobalID'] = 'dinopedia'
