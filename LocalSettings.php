@@ -170,3 +170,24 @@ $wgWBRepoSettings['siteLinkGroups'] = [
 $wgWBClientSettings['repoSiteName'] = 'Dinopedia Data';
 $wgWBClientSettings['otherProjectsLinks'] = [ 'wikidatawiki', 'commonswiki', 'ukwiki', 'enwiki' ];
 $wgWBClientSettings['otherProjectsLinksByDefault'] = true;
+$baseNs = 120;
+# Define the namespace indexes
+define( 'WB_NS_ITEM', $baseNs );
+define( 'WB_NS_ITEM_TALK', $baseNs + 1 );
+define( 'WB_NS_PROPERTY', $baseNs + 2 );
+define( 'WB_NS_PROPERTY_TALK', $baseNs + 3 );
+# Define the namespaces
+$wgExtraNamespaces[WB_NS_ITEM] = 'Item';
+$wgExtraNamespaces[WB_NS_ITEM_TALK] = 'Item_talk';
+$wgExtraNamespaces[WB_NS_PROPERTY] = 'Property';
+$wgExtraNamespaces[WB_NS_PROPERTY_TALK] = 'Property_talk';
+# Assigning the correct entity types to the namespaces
+$wgWBRepoSettings['entityNamespaces']['item'] = WB_NS_ITEM;
+$wgWBRepoSettings['entityNamespaces']['property'] = WB_NS_PROPERTY;
+# Making the namespaces searched by default
+$wgNamespacesToBeSearchedDefault[WB_NS_ITEM] = true;
+$wgNamespacesToBeSearchedDefault[WB_NS_PROPERTY] = true;
+$wgWBRepoSettings['localClientDatabases'] = [
+    'dinopedia' => 'dinopediawiki'
+  ];
+$wgWBRepoSettings['formatterUrlProperty'] = 'P6';
