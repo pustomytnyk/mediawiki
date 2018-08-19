@@ -153,4 +153,5 @@ wfLoadExtension( 'Cite' );
 
 wfLoadExtension( 'Popups' );
 
-enableSemantics( 'example.org' );
+enableSemantics( 'dinopedia-uk.herokuapp.com' );
+wfLoadExtension( 'PageForms' );
