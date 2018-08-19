@@ -137,14 +137,6 @@ $wgDefaultSkin = "vector";
 
 wfLoadSkin('Vector');
 
-# Wikibase
-$wgEnableWikibaseRepo = true;
-$wgEnableWikibaseClient = true;
-require_once "$IP/extensions/Wikibase/repo/Wikibase.php";
-require_once "$IP/extensions/Wikibase/repo/ExampleSettings.php";
-require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
-require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
-
 wfLoadExtension( 'ParserFunctions' );
 
 wfLoadExtension( 'WikiEditor' );
@@ -161,92 +153,4 @@ wfLoadExtension( 'Cite' );
 
 wfLoadExtension( 'Popups' );
 
-wfLoadExtension( 'WikibaseCreateLink' );
-$wgWBClientSettings['siteGlobalID'] = 'dinopedia';
-$wgWBClientSettings['globalID'] = 'dinopedia';
-if ( $wmgUseWikibaseRepo ) {
-  $wgEnableWikibaseRepo = true;
-  $wgContentHandlerUseDB = true;
-  // Register extra namespaces.
-  $wgExtraNamespaces[WB_NS_ITEM] = 'Item';
-  $wgExtraNamespaces[WB_NS_ITEM_TALK] = 'Item_talk';
-  $wgExtraNamespaces[WB_NS_PROPERTY] = 'Property';
-  $wgExtraNamespaces[WB_NS_PROPERTY_TALK] = 'Property_talk';
-  $wgWBRepoSettings['entityNamespaces'] = [
-    'item' => WB_NS_ITEM,
-    'property' => WB_NS_PROPERTY
-  ];
-  // Tell Wikibase which namespace to use for which kind of entity
-  // Make sure we use the same keys on repo and clients, so we can share cached objects.
-  // NOTE: no need to set up $wgNamespaceContentModels, Wikibase will do that automatically based on $wgWBRepoSettings
-  // Tell MediaWIki to search the item namespace
-  $wgNamespacesToBeSearchedDefault[WB_NS_ITEM] = true;
-  // the special group includes all the sites in the specialSiteLinkGroups,
-  // grouped together in a 'Pages linked to other sites' section.
-  $wgWBRepoSettings['siteLinkGroups'] = [
-    'dinopedia',
-    'wikipedia',
-    'special'
-  ];
-  // these are the site_group codes as listed in the sites table
-  $wgWBRepoSettings['specialSiteLinkGroups'] = [ 'commons', 'wikidata' ];
-  $wgWBRepoSettings['statementSections'] = [
-    'item' => [
-      'statements' => null,
-      'identifiers' => [
-        'type' => 'dataType',
-        'dataTypes' => [ 'external-id' ],
-      ],
-    ],
-  ];
-  $wgWBRepoSettings['localClientDatabases'] = [
-    'dinopedia' => 'dinopedia',
-  ];
-  $wgWBRepoSettings['formatterUrlProperty'] = 'P6';
-  $wgContentNamespaces = array_merge( $wgContentNamespaces, [ WB_NS_ITEM, WB_NS_PROPERTY ] );
-}
-if ( $wmgUseWikibaseClient ) {
-  $wgEnableWikibaseClient = true;
-  $wgWBClientSettings['repoUrl'] = 'https://dinopedia-uk.herokuapp.com';
-  $wgWBClientSettings['repoArticlePath'] = '/index.php?title=$1';
-  $wgWBClientSettings['repoScriptPath'] = '/w';
-  $wgWBClientSettings['repositories'] = [
-    '' => [
-      'repoDatabase' => 'datawiki',
-      'baseUri' => $wgWBClientSettings['repoUrl'] . '/entity/',
-      'entityNamespaces' => [
-        'item' => WB_NS_ITEM,
-                    'property' => WB_NS_PROPERTY
-      ],
-      'prefixMapping' => [ '' => '' ],
-    ]
-  ];
-  $wgWBClientSettings['siteGlobalID'] = 'dinopedia';
-  $wgWBClientSettings['siteGroup'] = 'dinopedia';
-  $wgWBClientSettings['changesDatabase'] = 'datawiki';
-  $wgWBCLientSettings['injectRecentChanges'] = true;
-  $wgWBClientSettings['languageLinkSiteGroup'] = 'dinopedia';
-  $wgWBClientSettings['repoNamespaces'] = [
-    'item' => 'Item',
-    'property' => 'Property',
-  ];
-  $wgWBClientSettings['entityNamespaces'] = [
-    'item' => $wmgWikibaseBaseNs,
-    'property' => $wmgWikibaseBaseNs + 2,
-  ];
-
-  $wgWBClientSettings['repoSiteName'] = 'dinopedia Data';
-  $wgWBClientSettings['otherProjectsLinks'] = [ 'wikidatawiki', 'commonswiki', 'ukwiki', 'enwiki' ];
-  $wgWBClientSettings['otherProjectsLinksByDefault'] = true;
-  $wgWBClientSettings['sendEchoNotification'] = true;
-  $wgHooks['WikibaseClientOtherProjectsSidebar'][] = function ( Wikibase\DataModel\Entity\ItemId $itemId, array &$sidebar ) {
-    foreach ( $sidebar as $id => &$group ) {
-      foreach ( $group as $siteId => &$attributes ) {
-        if ( isset( $attributes['hreflang'] ) ) {
-          $attributes['msg'] = $attributes['msg'] . '-' . $attributes['hreflang'];
-        }
-      }
-    }
-    return true;
-  };
-}
+enableSemantics( 'example.org' );

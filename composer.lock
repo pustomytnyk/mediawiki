@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3e4ae1146fc8f09c2c7c01a3eae9689",
+    "content-hash": "8d47b6ca2beee1cf3479af40e1cdf779",
     "packages": [
         {
             "name": "composer/installers",
@@ -225,27 +225,27 @@
         },
         {
             "name": "data-values/common",
-            "version": "0.4.1",
+            "version": "0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DataValues/Common.git",
-                "reference": "7b11237246ce4e4fcc59e0138d7942278a7df802"
+                "reference": "c99e06ffe1cfb709d4d8c970bac75dad65f66a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DataValues/Common/zipball/7b11237246ce4e4fcc59e0138d7942278a7df802",
-                "reference": "7b11237246ce4e4fcc59e0138d7942278a7df802",
+                "url": "https://api.github.com/repos/DataValues/Common/zipball/c99e06ffe1cfb709d4d8c970bac75dad65f66a1b",
+                "reference": "c99e06ffe1cfb709d4d8c970bac75dad65f66a1b",
                 "shasum": ""
             },
             "require": {
-                "data-values/data-values": "~1.0|~0.1",
+                "data-values/data-values": "~2.0|~1.0|~0.1",
                 "data-values/interfaces": "~0.2.0|^0.1.5",
                 "php": ">=5.3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -282,7 +282,7 @@
                 "valuevalidators",
                 "wikidata"
             ],
-            "time": "2017-08-09T18:20:52+00:00"
+            "time": "2018-08-16T08:16:18+00:00"
         },
         {
             "name": "data-values/data-values",
@@ -344,70 +344,6 @@
             "time": "2017-11-02T18:08:35+00:00"
         },
         {
-            "name": "data-values/geo",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DataValues/Geo.git",
-                "reference": "f0a4c31238d310cdb441c589554d0a279a6c2171"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DataValues/Geo/zipball/f0a4c31238d310cdb441c589554d0a279a6c2171",
-                "reference": "f0a4c31238d310cdb441c589554d0a279a6c2171",
-                "shasum": ""
-            },
-            "require": {
-                "data-values/data-values": "~2.0|~1.0|~0.1",
-                "data-values/interfaces": "^0.2.0",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "ockcyp/covers-validator": "~0.5",
-                "phpunit/phpunit": "~4.8",
-                "wikibase/wikibase-codesniffer": "^0.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DataValues\\Geo\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jeroen De Dauw",
-                    "email": "jeroendedauw@gmail.com",
-                    "homepage": "http://jeroendedauw.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "The Wikidata team",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Geographical value objects, parsers and formatters",
-            "homepage": "https://github.com/DataValues/Geo",
-            "keywords": [
-                "datavalues",
-                "formatters",
-                "geo",
-                "geographical",
-                "latlong",
-                "parsers",
-                "wikidata"
-            ],
-            "time": "2018-08-01T13:35:21+00:00"
-        },
-        {
             "name": "data-values/interfaces",
             "version": "0.2.5",
             "source": {
@@ -466,97 +402,36 @@
             "time": "2017-08-09T15:18:46+00:00"
         },
         {
-            "name": "data-values/number",
-            "version": "0.10.0",
+            "name": "data-values/validators",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DataValues/Number.git",
-                "reference": "7dc28810522900bb34c931f21479951516a65dc1"
+                "url": "https://github.com/DataValues/Validators.git",
+                "reference": "726f54fdc6bf58aa4f5405ae3d9c3f2b0f916141"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DataValues/Number/zipball/7dc28810522900bb34c931f21479951516a65dc1",
-                "reference": "7dc28810522900bb34c931f21479951516a65dc1",
-                "shasum": ""
-            },
-            "require": {
-                "data-values/common": "~0.4.0|~0.3.0",
-                "data-values/data-values": "~1.0|~0.1",
-                "data-values/interfaces": "~0.2.0",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "ext-bcmath": "*",
-                "phpunit/phpunit": "~4.8",
-                "wikibase/wikibase-codesniffer": "^0.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "Number.php"
-                ],
-                "psr-0": {
-                    "DataValues\\": "src",
-                    "ValueFormatters\\": "src",
-                    "ValueParsers\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Kinzler"
-                },
-                {
-                    "name": "Thiemo Kreuz"
-                }
-            ],
-            "description": "Numerical value objects, parsers and formatters",
-            "homepage": "https://github.com/DataValues/Number",
-            "keywords": [
-                "datavalues",
-                "number",
-                "valueformatters",
-                "valueparsers",
-                "wikidata"
-            ],
-            "time": "2018-04-11T08:18:47+00:00"
-        },
-        {
-            "name": "data-values/serialization",
-            "version": "1.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DataValues/Serialization.git",
-                "reference": "d849fc1a2f00f22027d504c4e70fd00a0c6a7579"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DataValues/Serialization/zipball/d849fc1a2f00f22027d504c4e70fd00a0c6a7579",
-                "reference": "d849fc1a2f00f22027d504c4e70fd00a0c6a7579",
+                "url": "https://api.github.com/repos/DataValues/Validators/zipball/726f54fdc6bf58aa4f5405ae3d9c3f2b0f916141",
+                "reference": "726f54fdc6bf58aa4f5405ae3d9c3f2b0f916141",
                 "shasum": ""
             },
             "require": {
                 "data-values/data-values": "~1.0|~0.1",
-                "php": ">=5.5.9",
-                "serialization/serialization": "~4.0|~3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8",
-                "wikibase/wikibase-codesniffer": "^0.2.0"
+                "data-values/interfaces": "~0.1",
+                "php": ">=5.3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "0.1.x-dev"
                 }
             },
             "autoload": {
+                "files": [
+                    "Validators.php"
+                ],
                 "psr-4": {
-                    "DataValues\\Serializers\\": "src/Serializers",
-                    "DataValues\\Deserializers\\": "src/Deserializers"
+                    "ValueValidators\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -569,138 +444,23 @@
                     "email": "jeroendedauw@gmail.com",
                     "homepage": "http://jeroendedauw.com",
                     "role": "Developer"
-                }
-            ],
-            "description": "Serializers and deserializers for DataValue implementations",
-            "homepage": "https://github.com/DataValues/Serialization",
-            "keywords": [
-                "datavalues",
-                "deserializers",
-                "serialization",
-                "serializers",
-                "wikidata"
-            ],
-            "time": "2017-10-25T13:47:05+00:00"
-        },
-        {
-            "name": "data-values/time",
-            "version": "0.8.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DataValues/Time.git",
-                "reference": "92f768e90d2ec10bb70b7e631dbb268e803d3fe8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DataValues/Time/zipball/92f768e90d2ec10bb70b7e631dbb268e803d3fe8",
-                "reference": "92f768e90d2ec10bb70b7e631dbb268e803d3fe8",
-                "shasum": ""
-            },
-            "require": {
-                "data-values/common": "~0.4.0|~0.3.0|~0.2.0",
-                "data-values/data-values": "~1.0|~0.1",
-                "data-values/interfaces": "~0.2.0|~0.1.5",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8",
-                "wikibase/wikibase-codesniffer": "^0.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "Time.php"
-                ],
-                "psr-0": {
-                    "DataValues\\": "src",
-                    "ValueFormatters\\": "src",
-                    "ValueParsers\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
+                },
                 {
                     "name": "The Wikidata team",
                     "role": "Developer"
                 }
             ],
-            "description": "Time value objects, parsers and formatters",
-            "homepage": "https://github.com/DataValues/Time",
+            "description": "Common ValueValidator implementations",
+            "homepage": "https://github.com/DataValues/Validators",
             "keywords": [
                 "datavalues",
-                "time",
+                "validation",
+                "validators",
                 "valueformatters",
                 "valueparsers",
                 "wikidata"
             ],
-            "time": "2017-09-06T09:54:50+00:00"
-        },
-        {
-            "name": "diff/diff",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wmde/Diff.git",
-                "reference": "9f2b65c104b661a02f592f96321fd4c052532742"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wmde/Diff/zipball/9f2b65c104b661a02f592f96321fd4c052532742",
-                "reference": "9f2b65c104b661a02f592f96321fd4c052532742",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpmd/phpmd": "~2.3",
-                "phpunit/phpunit": "~4.8",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "Diff.php"
-                ],
-                "psr-4": {
-                    "Diff\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Jeroen De Dauw",
-                    "email": "jeroendedauw@gmail.com",
-                    "homepage": "http://jeroendedauw.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Small standalone library for representing differences between data structures, computing such differences, and applying them as patches",
-            "homepage": "https://github.com/wmde/Diff",
-            "keywords": [
-                "diff",
-                "diffing",
-                "diffop",
-                "patching",
-                "wikidata"
-            ],
-            "time": "2018-04-11T10:38:57+00:00"
+            "time": "2014-10-09T19:10:23+00:00"
         },
         {
             "name": "liuggio/statsd-php-client",
@@ -753,12 +513,158 @@
             "time": "2015-07-23T23:12:45+00:00"
         },
         {
+            "name": "mediawiki/parser-hooks",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JeroenDeDauw/ParserHooks.git",
+                "reference": "8139d79191e467d71139d53ac12bb4acb7b3963d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JeroenDeDauw/ParserHooks/zipball/8139d79191e467d71139d53ac12bb4acb7b3963d",
+                "reference": "8139d79191e467d71139d53ac12bb4acb7b3963d",
+                "shasum": ""
+            },
+            "require": {
+                "param-processor/param-processor": "~1.2",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "ParserHooks.php"
+                ],
+                "psr-4": {
+                    "ParserHooks\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen De Dauw",
+                    "email": "jeroendedauw@gmail.com",
+                    "homepage": "https://www.entropywins.wtf"
+                }
+            ],
+            "description": "Adds a OOP and declarative parser hook interface on top of MediaWiki",
+            "homepage": "https://github.com/JeroenDeDauw/ParserHooks/blob/master/README.md",
+            "keywords": [
+                "mediawiki",
+                "parser function",
+                "parser hook",
+                "parserhooks",
+                "tag extension"
+            ],
+            "time": "2016-03-05T15:47:04+00:00"
+        },
+        {
+            "name": "mediawiki/semantic-media-wiki",
+            "version": "2.5.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SemanticMediaWiki/SemanticMediaWiki.git",
+                "reference": "55b550a34e2013b7e7c9012586f387f84bba72fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SemanticMediaWiki/SemanticMediaWiki/zipball/55b550a34e2013b7e7c9012586f387f84bba72fa",
+                "reference": "55b550a34e2013b7e7c9012586f387f84bba72fa",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "1.*,>=1.0.1",
+                "ext-mbstring": "*",
+                "mediawiki/parser-hooks": "~1.4",
+                "onoi/blob-store": "~1.2",
+                "onoi/cache": "~1.2",
+                "onoi/callback-container": "~2.0",
+                "onoi/event-dispatcher": "~1.0",
+                "onoi/http-request": "~1.1",
+                "onoi/message-reporter": "~1.0",
+                "onoi/shared-resources": "~0.3",
+                "onoi/tesa": "~0.1",
+                "param-processor/param-processor": "~1.2",
+                "php": ">=5.5.0",
+                "psr/log": "~1.0",
+                "serialization/serialization": "~3.2",
+                "symfony/css-selector": "^3.3"
+            },
+            "replace": {
+                "mediawiki/semantic-mediawiki": "*"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "~2.1",
+                "squizlabs/php_codesniffer": "~2.1"
+            },
+            "suggest": {
+                "mediawiki/semantic-result-formats": "Additional result formats for SMW queries"
+            },
+            "type": "mediawiki-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SMW\\": "src/",
+                    "SMW\\Maintenance\\": "maintenance/"
+                },
+                "files": [
+                    "SemanticMediaWiki.php"
+                ],
+                "classmap": [
+                    "includes/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Krötzsch",
+                    "homepage": "http://korrekt.org",
+                    "role": "Original author"
+                },
+                {
+                    "name": "Jeroen De Dauw",
+                    "email": "jeroendedauw@gmail.com",
+                    "homepage": "http://jeroendedauw.com",
+                    "role": "Core developer"
+                },
+                {
+                    "name": "James Hong Kong",
+                    "homepage": "https://www.semantic-mediawiki.org/wiki/User:MWJames",
+                    "role": "Core developer"
+                }
+            ],
+            "description": "MediaWiki extension that lets you store and query structured data within wiki pages",
+            "homepage": "https://www.semantic-mediawiki.org/wiki/",
+            "keywords": [
+                "SMW",
+                "Semantic MediaWiki",
+                "mediawiki",
+                "wiki"
+            ],
+            "time": "2018-08-09T07:33:11+00:00"
+        },
+        {
             "name": "mediawiki/vector-skin",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://phabricator.wikimedia.org/diffusion/SVEC/vector.git",
-                "reference": "2515b27616b5b69057ef3a70f98cbbb42f5644df"
+                "reference": "d58ee138e7f3d706108b365589fff49e06b9167a"
             },
             "require": {
                 "composer/installers": ">1.0.12",
@@ -797,7 +703,374 @@
                 "skin",
                 "wiki"
             ],
-            "time": "2018-08-01T19:56:31+00:00"
+            "time": "2018-08-15T20:04:43+00:00"
+        },
+        {
+            "name": "onoi/blob-store",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/blob-store.git",
+                "reference": "c3e1f15214977e904fc0e91e0480175a464977ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/blob-store/zipball/c3e1f15214977e904fc0e91e0480175a464977ce",
+                "reference": "c3e1f15214977e904fc0e91e0480175a464977ce",
+                "shasum": ""
+            },
+            "require": {
+                "onoi/cache": "~1.1",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Onoi\\BlobStore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mwjames"
+                }
+            ],
+            "description": "A simple interface to manage schema-free temporal persistent key/values",
+            "homepage": "https://github.com/onoi/blob-store",
+            "keywords": [
+                "messages"
+            ],
+            "time": "2016-07-09T17:32:53+00:00"
+        },
+        {
+            "name": "onoi/cache",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/cache.git",
+                "reference": "ecc999186aab7c8db411aedd892b2e5fe5a0b422"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/cache/zipball/ecc999186aab7c8db411aedd892b2e5fe5a0b422",
+                "reference": "ecc999186aab7c8db411aedd892b2e5fe5a0b422",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Onoi\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mwjames",
+                    "homepage": "https://github.com/mwjames"
+                }
+            ],
+            "description": "A minimalistic cache adapter interface library",
+            "homepage": "https://github.com/onoi/cache",
+            "keywords": [
+                "cache"
+            ],
+            "time": "2015-06-02T08:52:45+00:00"
+        },
+        {
+            "name": "onoi/callback-container",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/callback-container.git",
+                "reference": "cf2f4dda1b2479bc786985fdb5554af528d03e52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/callback-container/zipball/cf2f4dda1b2479bc786985fdb5554af528d03e52",
+                "reference": "cf2f4dda1b2479bc786985fdb5554af528d03e52",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Onoi\\CallbackContainer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mwjames",
+                    "homepage": "https://github.com/mwjames"
+                }
+            ],
+            "description": "A very simple callback container/builder library",
+            "homepage": "https://github.com/onoi/callback-container",
+            "keywords": [
+                "container"
+            ],
+            "time": "2017-02-18T10:46:46+00:00"
+        },
+        {
+            "name": "onoi/event-dispatcher",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/event-dispatcher.git",
+                "reference": "2ab3958a7c6341451afe4c31503d00d423b30b64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/event-dispatcher/zipball/2ab3958a7c6341451afe4c31503d00d423b30b64",
+                "reference": "2ab3958a7c6341451afe4c31503d00d423b30b64",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Onoi\\EventDispatcher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mwjames"
+                }
+            ],
+            "description": "A minimalistic interface to relay generic events to registered listeners",
+            "homepage": "https://github.com/onoi/event-dispatcher",
+            "keywords": [
+                "events",
+                "listener"
+            ],
+            "time": "2015-03-25T23:19:55+00:00"
+        },
+        {
+            "name": "onoi/http-request",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/http-request.git",
+                "reference": "a7cf33bae82cffe570086fc06d6617e802c0cc74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/http-request/zipball/a7cf33bae82cffe570086fc06d6617e802c0cc74",
+                "reference": "a7cf33bae82cffe570086fc06d6617e802c0cc74",
+                "shasum": ""
+            },
+            "require": {
+                "onoi/cache": "~1.2",
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "lib-curl": "Allows making CURL requests"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Onoi\\HttpRequest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mwjames",
+                    "homepage": "https://github.com/mwjames"
+                }
+            ],
+            "description": "A minimalistic http/curl request interface library",
+            "homepage": "https://github.com/onoi/http-request",
+            "keywords": [
+                "curl",
+                "http request"
+            ],
+            "time": "2017-01-14T16:25:41+00:00"
+        },
+        {
+            "name": "onoi/message-reporter",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/message-reporter.git",
+                "reference": "1e4735168d122ff6585604423c0732e3beeb101e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/message-reporter/zipball/1e4735168d122ff6585604423c0732e3beeb101e",
+                "reference": "1e4735168d122ff6585604423c0732e3beeb101e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Onoi\\MessageReporter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen De Dauw"
+                },
+                {
+                    "name": "mwjames"
+                }
+            ],
+            "description": "An interface to report and relay arbitrary messages to registered handlers",
+            "homepage": "https://github.com/onoi/message-reporter",
+            "keywords": [
+                "messages"
+            ],
+            "time": "2017-11-05T10:07:59+00:00"
+        },
+        {
+            "name": "onoi/shared-resources",
+            "version": "0.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/shared-resources.git",
+                "reference": "322273a7462eb0c15305dde9207138f00a387080"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/shared-resources/zipball/322273a7462eb0c15305dde9207138f00a387080",
+                "reference": "322273a7462eb0c15305dde9207138f00a387080",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "1.*,>=1.0.1",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mwjames",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Shareable and common resource modules",
+            "homepage": "https://github.com/onoi/common-resources",
+            "keywords": [
+                "mediawiki"
+            ],
+            "time": "2017-04-23T15:14:49+00:00"
+        },
+        {
+            "name": "onoi/tesa",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onoi/tesa.git",
+                "reference": "c8a07ca8738cf6d644e83d10ba2cb1ef93dffa7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onoi/tesa/zipball/c8a07ca8738cf6d644e83d10ba2cb1ef93dffa7d",
+                "reference": "c8a07ca8738cf6d644e83d10ba2cb1ef93dffa7d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.2",
+                "wikimedia/cdb": "~1.0",
+                "wikimedia/textcat": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Onoi\\Tesa\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mwjames",
+                    "homepage": "https://github.com/mwjames"
+                }
+            ],
+            "description": "A simple library to sanitize text elements",
+            "homepage": "https://github.com/onoi/tesa",
+            "keywords": [
+                "transliteration"
+            ],
+            "time": "2016-08-07T10:40:08+00:00"
         },
         {
             "name": "oojs/oojs-ui",
@@ -940,6 +1213,74 @@
                 "stylesheet"
             ],
             "time": "2017-03-28T22:19:25+00:00"
+        },
+        {
+            "name": "param-processor/param-processor",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JeroenDeDauw/ParamProcessor.git",
+                "reference": "f35b06f3bebf899cf640f15362e08768ac112202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JeroenDeDauw/ParamProcessor/zipball/f35b06f3bebf899cf640f15362e08768ac112202",
+                "reference": "f35b06f3bebf899cf640f15362e08768ac112202",
+                "shasum": ""
+            },
+            "require": {
+                "data-values/common": "~0.4.0|~0.3.0|~0.2.2",
+                "data-values/data-values": "~2.0|~1.0|~0.1.1",
+                "data-values/interfaces": "~0.2.0|~0.1.4",
+                "data-values/validators": "~0.1.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "ockcyp/covers-validator": "~0.4",
+                "phpmd/phpmd": "~2.1",
+                "phpunit/phpunit": "~5.4|~4.8",
+                "squizlabs/php_codesniffer": "~2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ParamProcessor\\": "src"
+                },
+                "classmap": [
+                    "tests/phpunit/Definitions/ParamDefinitionTest.php",
+                    "tests/phpunit/Definitions/NumericParamTest.php"
+                ],
+                "files": [
+                    "DefaultConfig.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen De Dauw",
+                    "email": "jeroendedauw@gmail.com",
+                    "homepage": "https://www.entropywins.wtf",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parameter processing library",
+            "homepage": "https://github.com/JeroenDeDauw/ParamProcessor",
+            "keywords": [
+                "ParamProcessor",
+                "SMW",
+                "Semantic MediaWiki",
+                "mediawiki",
+                "validator"
+            ],
+            "time": "2018-05-05T18:38:56+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -1287,17 +1628,17 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
-            "name": "psr/simple-cache",
-            "version": "1.0.1",
+            "name": "serialization/serialization",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+                "url": "https://github.com/wmde/Serialization.git",
+                "reference": "985aae9c30bff93936d8e87a3986c27b5d1413d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "url": "https://api.github.com/repos/wmde/Serialization/zipball/985aae9c30bff93936d8e87a3986c27b5d1413d5",
+                "reference": "985aae9c30bff93936d8e87a3986c27b5d1413d5",
                 "shasum": ""
             },
             "require": {
@@ -1306,62 +1647,13 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Psr\\SimpleCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interfaces for simple caching",
-            "keywords": [
-                "cache",
-                "caching",
-                "psr",
-                "psr-16",
-                "simple-cache"
-            ],
-            "time": "2017-10-23T01:57:42+00:00"
-        },
-        {
-            "name": "serialization/serialization",
-            "version": "4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wmde/Serialization.git",
-                "reference": "6fa293415e2b70c30c1e673d8bcd04d27dc15e44"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wmde/Serialization/zipball/6fa293415e2b70c30c1e673d8bcd04d27dc15e44",
-                "reference": "6fa293415e2b70c30c1e673d8bcd04d27dc15e44",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8",
-                "wikibase/wikibase-codesniffer": "^0.2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0.x-dev"
-                }
-            },
-            "autoload": {
+                "files": [
+                    "Serialization.php"
+                ],
                 "psr-4": {
                     "Deserializers\\": "src/Deserializers/",
                     "Serializers\\": "src/Serializers/"
@@ -1389,259 +1681,60 @@
                 "unserialization",
                 "wikidata"
             ],
-            "time": "2017-10-25T11:45:30+00:00"
+            "time": "2017-11-02T17:41:58+00:00"
         },
         {
-            "name": "wikibase/data-model",
-            "version": "7.5.0",
+            "name": "symfony/css-selector",
+            "version": "v3.4.14",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wmde/WikibaseDataModel.git",
-                "reference": "a3105365051c4754a621f5884f31badc2dad33fd"
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "edda5a6155000ff8c3a3f85ee5c421af93cca416"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wmde/WikibaseDataModel/zipball/a3105365051c4754a621f5884f31badc2dad33fd",
-                "reference": "a3105365051c4754a621f5884f31badc2dad33fd",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/edda5a6155000ff8c3a3f85ee5c421af93cca416",
+                "reference": "edda5a6155000ff8c3a3f85ee5c421af93cca416",
                 "shasum": ""
             },
             "require": {
-                "data-values/data-values": "~0.1|~1.0",
-                "php": ">=5.5.9",
-                "wikimedia/assert": "~0.2.2"
-            },
-            "require-dev": {
-                "ockcyp/covers-validator": "~0.4.0",
-                "phpmd/phpmd": "~2.3",
-                "phpunit/phpunit": "~4.8",
-                "wikibase/wikibase-codesniffer": "^0.1.0"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3.x-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "WikibaseDataModel.php"
-                ],
                 "psr-4": {
-                    "Wikibase\\DataModel\\": "src/"
-                }
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Thiemo Mättig"
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
-                    "name": "Jeroen De Dauw",
-                    "email": "jeroendedauw@gmail.com",
-                    "homepage": "http://jeroendedauw.com"
-                }
-            ],
-            "description": "PHP implementation of the Wikibase DataModel",
-            "homepage": "https://github.com/wmde/WikibaseDataModel",
-            "keywords": [
-                "DataModel",
-                "wikibase",
-                "wikidata"
-            ],
-            "time": "2018-05-02T11:55:57+00:00"
-        },
-        {
-            "name": "wikibase/data-model-serialization",
-            "version": "2.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wmde/WikibaseDataModelSerialization.git",
-                "reference": "4db9226405c6d18005d8437282547b15d92cb927"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wmde/WikibaseDataModelSerialization/zipball/4db9226405c6d18005d8437282547b15d92cb927",
-                "reference": "4db9226405c6d18005d8437282547b15d92cb927",
-                "shasum": ""
-            },
-            "require": {
-                "data-values/serialization": "~1.0",
-                "php": ">=5.5.9",
-                "serialization/serialization": "~4.0|~3.1",
-                "wikibase/data-model": "~8.0|~7.0|~6.0|~5.0|~4.2"
-            },
-            "require-dev": {
-                "data-values/geo": "~3.0",
-                "data-values/number": ">=0.1 <0.10",
-                "data-values/time": "~0.2",
-                "phpunit/phpunit": "^4.8.35",
-                "wikibase/wikibase-codesniffer": "^0.4.1"
-            },
-            "suggest": {
-                "data-values/geo": "Needed for deserialization of geographical values",
-                "data-values/number": "Needed for deserialization of numerical values",
-                "data-values/time": "Needed for deserialization of time values"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wikibase\\DataModel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas PT",
-                    "homepage": "https://github.com/Tpt"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 },
                 {
-                    "name": "Jeroen De Dauw",
-                    "email": "jeroendedauw@gmail.com",
-                    "homepage": "http://jeroendedauw.com"
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Serializers and deserializers for the Wikibase DataModel",
-            "homepage": "https://github.com/wmde/WikibaseDataModelSerialization",
-            "keywords": [
-                "DataModel",
-                "deserializers",
-                "serialization",
-                "serializers",
-                "wikibase",
-                "wikidata"
-            ],
-            "time": "2018-08-08T10:06:40+00:00"
-        },
-        {
-            "name": "wikibase/data-model-services",
-            "version": "3.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wmde/WikibaseDataModelServices.git",
-                "reference": "af2f208004effe61a726492f914e15590e40e4e9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wmde/WikibaseDataModelServices/zipball/af2f208004effe61a726492f914e15590e40e4e9",
-                "reference": "af2f208004effe61a726492f914e15590e40e4e9",
-                "shasum": ""
-            },
-            "require": {
-                "data-values/data-values": "~2.0|~1.0",
-                "diff/diff": "~2.3|~1.0",
-                "php": ">=5.6.0",
-                "wikibase/data-model": "~8.0|~7.0|~6.3",
-                "wikimedia/assert": "~0.2.2"
-            },
-            "require-dev": {
-                "phpmd/phpmd": "~2.3",
-                "phpunit/phpunit": "~5.7",
-                "wikibase/wikibase-codesniffer": "^0.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.11.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wikibase\\DataModel\\Services\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jeroen De Dauw",
-                    "email": "jeroendedauw@gmail.com",
-                    "homepage": "http://jeroendedauw.com"
-                }
-            ],
-            "description": "Services around the Wikibase DataModel",
-            "homepage": "https://github.com/wmde/WikibaseDataModelServices",
-            "keywords": [
-                "DataModel",
-                "wikibase",
-                "wikidata"
-            ],
-            "time": "2018-08-08T22:42:16+00:00"
-        },
-        {
-            "name": "wikibase/internal-serialization",
-            "version": "2.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wmde/WikibaseInternalSerialization.git",
-                "reference": "6129fea7c6261368839d146aba0e106d0ad36fef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wmde/WikibaseInternalSerialization/zipball/6129fea7c6261368839d146aba0e106d0ad36fef",
-                "reference": "6129fea7c6261368839d146aba0e106d0ad36fef",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6",
-                "serialization/serialization": "~4.0|~3.2",
-                "wikibase/data-model": "~8.0|~7.0|~6.0|~5.0",
-                "wikibase/data-model-serialization": "~2.0"
-            },
-            "require-dev": {
-                "data-values/common": ">=0.1 <0.5",
-                "data-values/geo": ">=1.0 <4.0",
-                "data-values/number": ">=0.1 <0.10",
-                "data-values/time": ">=0.1 <0.9",
-                "phpmd/phpmd": "~2.3",
-                "phpunit/phpunit": "~5.7",
-                "wikibase/wikibase-codesniffer": "^0.2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wikibase\\InternalSerialization\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jeroen De Dauw",
-                    "email": "jeroendedauw@gmail.com",
-                    "homepage": "http://jeroendedauw.com"
-                }
-            ],
-            "description": "Serializers and deserializers for the data access layer of Wikibase Repository",
-            "homepage": "https://github.com/wmde/WikibaseInternalSerialization",
-            "keywords": [
-                "DataModel",
-                "deserializers",
-                "serialization",
-                "serializers",
-                "wikibase",
-                "wikidata"
-            ],
-            "time": "2018-08-08T22:43:43+00:00"
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-07-26T09:06:28+00:00"
         },
         {
             "name": "wikimedia/assert",
@@ -2345,6 +2438,51 @@
             "description": "Class for asserting that a callback happens when a dummy object leaves scope",
             "homepage": "https://www.mediawiki.org/wiki/ScopedCallback",
             "time": "2018-05-09T06:30:27+00:00"
+        },
+        {
+            "name": "wikimedia/textcat",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wikimedia/wikimedia-textcat.git",
+                "reference": "17818e14cf31c99f43a3c9bdd09a4d6e2914883f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wikimedia/wikimedia-textcat/zipball/17818e14cf31c99f43a3c9bdd09a4d6e2914883f",
+                "reference": "17818e14cf31c99f43a3c9bdd09a4d6e2914883f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "mediawiki/mediawiki-codesniffer": "0.5.0",
+                "phpunit/phpunit": "4.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "TextCat": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Stanislav Malyshev",
+                    "email": "smalyshev@wikimedia.org"
+                },
+                {
+                    "name": "Trey Jones",
+                    "email": "tjones@wikimedia.org"
+                }
+            ],
+            "description": "PHP port of the TextCat language guesser utility, see http://odur.let.rug.nl/~vannoord/TextCat/.",
+            "time": "2017-01-23T16:52:10+00:00"
         },
         {
             "name": "wikimedia/timestamp",

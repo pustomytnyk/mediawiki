@@ -54,7 +54,8 @@
 		"wikimedia/xmp-reader": "0.5.1",
 		"zordius/lightncandy": "0.23",
 
-		"mediawiki/vector-skin": "dev-master"
+		"mediawiki/vector-skin": "dev-master",
+		"mediawiki/semantic-media-wiki": "2.5.7"
 	},
 	"require-dev": {
 		"cache/integration-tests": "0.16.0",
